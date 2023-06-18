@@ -2,11 +2,16 @@
 
 ## Présentation du projet :
 
-Pendant une expérience de 100 jours,  un soignant donne des médicaments à des patients, il a dix types de médicament différent avec un pourcentage de réussite définis pour chacun.  
+Pendant une expérience de 100 jours,  un soignant donne des médicaments à des patients, il a dix types de médicament différent avec un pourcentage de réussite définis pour chacun.
+les pourcentages de réussites pour chaque médicament : numéro du médicament / pourcentage de réussite
+
+|  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10 | 
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0.3 | 0.85| 0.1 | 0.3 | 0.5 | 0.9 | 0.4 | 0.75| 0.1 | 0.33| 
 
 ## Problème - Un système de renforcement par apprentissage
 
-Le soignant ne connaissent pas les pourcentages de réussite des médicaments. Ainsi, le soignant doit évaluer le succès de chaque médicament en fonction du retour qu'il a des patients. Il peut supposer un pourcentage de réussite pour chaque médicament. Il détermine alors le médicament qui va être donné ensuite au patient. Le but est pour le soignant de trouver le(s) médicament(s) le(s) plus efficace(s) pour soigner le plus de patients possible. Durant l'expérience, il faudra, pour maximiser le nombre de patient guéri, travailler sur une phase d'exploration et une phase d'exploitation des données. La phase d'exploration permettra de tester les médicaments sur les patients afin de fournir les données d'échec ou de réussite qui peuvent être traitées ensuite par la phase d'exploitation, qui va elle pouvoir sélectionner par exemple les médicaments le plus intéressant.
+Le soignant ne connait pas les pourcentages de réussite des médicaments. Ainsi, le soignant doit évaluer le succès de chaque médicament en fonction du retour qu'il a des patients. Il peut supposer un pourcentage de réussite pour chaque médicament. Il détermine alors le médicament qui va être donné ensuite au patient. Le but est pour le soignant de trouver le(s) médicament(s) le(s) plus efficace(s) pour soigner le plus de patients possible. Durant l'expérience, il faudra, pour maximiser le nombre de patient guéri, travailler sur une phase d'exploration et une phase d'exploitation des données. La phase d'exploration permettra de tester les médicaments sur les patients afin de fournir les données d'échec ou de réussite qui peuvent être traitées ensuite par la phase d'exploitation, qui va elle pouvoir sélectionner par exemple les médicaments le plus intéressant.
 
 ## Présentation des règles :
 
@@ -39,7 +44,7 @@ Nous pouvons nettement remarquer les courbes des médicaments 8 et 2 dont la den
 Résultat de la méthode ```findBestMedicWithBeta```:
 ![Graphe avec la loi Beta](grapheLoiBeta.png)
 
-Sur ce graphe nous pouvons observer l'efficacité de la stratégie nommée ```findBestMedicWithBeta``` avec le nombre de soignées qui augmente sur toute la période de l'expérience jusqu'à atteindre les 80 soignés. À noter que losque l'expérience avec cette stratégie est relancé la courbe redescend quelquefois à 70 patients soignés. Nous pouvons remarquer par exemple que plus la période de l'expérience avance, plus le nombre de soignées augmente avec une **tendance** constante.
+Sur ce graphe nous pouvons observer l'efficacité de la stratégie nommée ```findBestMedicWithBeta``` avec le nombre de soignées qui augmente sur toute la période de l'expérience jusqu'à atteindre les 80 soignés. Lors de cette stratégie, le médicament qui présente donc une densité de probabilité de succès la plus élevé est donné au patient. Suite au graphe que nous avons observé au dessus, les deux médicaments les plus utilisés sont le 2 et le 8.À noter que losque l'expérience avec cette stratégie est relancé la courbe redescend quelquefois à 70 patients soignés. Nous pouvons remarquer par exemple que plus la période de l'expérience avance, plus le nombre de soignées augmente avec une **tendance** constante.
 
 ## Bilan
 
