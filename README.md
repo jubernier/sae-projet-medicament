@@ -30,13 +30,15 @@ Résultat de la méthode ```findBestMedicIn30jours``` :
 Sur ce graphe nous pouvons observer l'efficacité de la stratégie nommée ```findBestMedicIn30jours``` avec le nombre de soignées qui augmente sur toute la période de l'expérience jusqu'à atteindre les 80 soignés. À noter que lorsque l'expérience avec cette stratégie est relancé la courbe redescend de rare fois à 60 patients soignés. Plus la période de l'expérience avance, le nombre de soignées augmente avec une tendance constante plus importante. Ce qui signifie que les médicaments choisis, après les 2 phases d'élimination des médicaments estimés sans efficacité, tout au long de l'expérience pour les patients ont bien fonctionné.
 
 Résultat de valeurs aléatoires généré par la loi Beta pour chaque médicament ```findBestMedicWithBeta```:
-![](distribBetas.png)
+![Graphe chaque médicament selon la loi Beta](distribBetas.png)
+
 Nous pouvons observer sur ce graphe la répartition des valeurs aléatoires définies sur l'intervalle [0,1]. En traçant les courbes des valeurs générées par la loi Beta pour chaque médicament, nous pouvons visualiser la distribution des probabilités d'efficacité pour chaque médicament. Cela permet de comparer les médicaments et d'identifier ceux qui ont des valeurs aléatoires plus élevées, indiquant une probabilité plus élevée d'efficacité.
 
 Nous pouvons nettement remarquer les courbes des médicaments 8 et 2 dont la densité de probabilité augmente jusqu'à atteindre 11 lorsque la courbe se rapproche de 1 soit α vers l'axe des abscisses, cela indique une probabilité élevée de succès.
 
 Résultat de la méthode ```findBestMedicWithBeta```:
 ![Graphe avec la loi Beta](grapheLoiBeta.png)
+
 Sur ce graphe nous pouvons observer l'efficacité de la stratégie nommée ```findBestMedicWithBeta``` avec le nombre de soignées qui augmente sur toute la période de l'expérience jusqu'à atteindre les 80 soignés. À noter que losque l'expérience avec cette stratégie est relancé la courbe redescend quelquefois à 70 patients soignés. Nous pouvons remarquer par exemple que plus la période de l'expérience avance, plus le nombre de soignées augmente avec une **tendance** constante.
 
 ## Bilan
