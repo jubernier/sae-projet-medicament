@@ -1,4 +1,4 @@
-# Projet Médicament
+# Projet Médicament - Justine Bernier PEIP D Groupe 1 TP 1-2
 
 ## Présentation du projet :
 
